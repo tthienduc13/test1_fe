@@ -1,0 +1,85 @@
+$mobile-width: 768px;
+$tablet-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+.contact {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    flex: 1;
+    padding: 160px 398px 160px 397px;
+    @include tablet() {
+      padding: 160px 189px;
+    }
+    @include mobile() {
+      padding: 90px 20px 93px 20px;
+    }
+    &-logo {
+      height: 160px;
+      width: 160px;
+      margin-bottom: 10px;
+      @include mobile() {
+        margin-bottom: 20px;
+        height: 90px;
+        width: 90px;
+      }
+    }
+    &-header {
+      margin-bottom: 20px;
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 32px;
+      @include mobile() {
+        font-size: 36px;
+        line-height: 32px;
+        margin-bottom: 12px;
+      }
+    }
+    &-desc {
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 32px;
+      @include mobile() {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+    &-button {
+      font-weight: 600;
+      padding: 25px 40px;
+      color: white;
+      font-size: 24px;
+      line-height: 20px;
+      background: #f84646;
+      border-radius: 8px;
+      gap: 10px;
+      border: none;
+      @include mobile() {
+        padding: 11px 20.5px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}

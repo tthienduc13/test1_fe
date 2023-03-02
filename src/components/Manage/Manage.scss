@@ -1,0 +1,103 @@
+$mobile-width: 768px;
+$tablet-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+.manage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  &__container {
+    max-width: 1440px;
+    padding: 120px 120px 140px 120px;
+    display: flex;
+    flex-direction: column;
+    @include tablet() {
+      padding: 120px 0 135px 0;
+    }
+    @include mobile() {
+      padding: 60px 0 100px 0;
+    }
+    &-header {
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 49px;
+      text-align: center;
+      @include mobile() {
+        font-size: 24px;
+        line-height: 33px;
+      }
+    }
+    &-desc {
+      margin-top: 30px;
+      margin-bottom: 5px;
+      padding: 0 103px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      @include tablet() {
+        padding: 0 86px;
+        margin-top: 10px;
+      }
+      @include mobile() {
+        font-size: 12px;
+        line-height: 22px;
+        padding: 0 20px;
+      }
+    }
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      @include tablet() {
+        padding: 0 145px;
+      }
+      @include mobile() {
+        justify-content: center;
+        padding: 0 20px;
+      }
+      .content-item {
+        width: 320px;
+        margin-top: 85px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        @include tablet() {
+          margin-top: 80px;
+        }
+
+        .item-img {
+          height: 76px;
+          width: 76px;
+        }
+        .item-name {
+          font-weight: 800;
+          font-size: 24px;
+          line-height: 33px;
+          text-align: center;
+        }
+        .item-desc {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          text-align: center;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+  }
+}
