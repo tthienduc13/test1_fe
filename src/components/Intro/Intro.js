@@ -25,12 +25,6 @@ function Intro() {
           </div>
           {/* row2 */}
           <div className="intro__container-content">
-            <div className="intro__container-content-img">
-              <img src={require("../../assets/intro3.png")}></img>
-            </div>
-            <div className="intro__container-content-img">
-              <img src={require("../../assets/intro2.png")}></img>
-            </div>
             <div className="intro__container-content-desc">
               <div className="content-header">Test Yönetimi ve Analizi</div>
               <div className="content-desc">
@@ -42,6 +36,9 @@ function Intro() {
                 kaliteli ve tatmin edici bir müşteri deneyimi sunmaktadır.
               </div>
               <button className="content-btn">Keşfet</button>
+            </div>
+            <div className="intro__container-content-img">
+              <img src={require("../../assets/intro2.png")}></img>
             </div>
           </div>
         </div>

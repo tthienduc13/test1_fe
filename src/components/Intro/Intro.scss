@@ -18,6 +18,7 @@ $tablet-width: 1024px;
   justify-content: center;
   width: 100%;
   &__container {
+    max-width: 1200px;
     gap: 120px;
     flex: 1;
     max-width: 1440px;
@@ -35,26 +36,11 @@ $tablet-width: 1024px;
     }
     &-content {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
-      gap: 85.21px;
-      &:nth-child(2) {
-        gap: 185px;
-      }
-      &:nth-child(2) &-img:nth-child(1) {
-        display: none;
+      &:last-child {
+        flex-direction: row-reverse;
       }
       @include tablet() {
-        gap: 56px;
-        &:nth-child(2) {
-          gap: 56px;
-        }
-        &:nth-child(2) &-img:nth-child(1) {
-          display: block;
-        }
-        &:nth-child(2) &-img:nth-child(2) {
-          display: none;
-        }
       }
       @include mobile() {
         flex-direction: column;
@@ -63,18 +49,17 @@ $tablet-width: 1024px;
           flex-direction: column-reverse;
         }
         &:nth-child(2) {
+          flex-direction: column-reverse;
           gap: 30px;
-        }
-        &:nth-child(2) &-img:nth-child(2) {
-          display: none;
-        }
-        &:nth-child(2) &-img:nth-child(1) {
-          display: block;
         }
       }
       &-desc {
+        width: 50%;
         display: flex;
         flex-direction: column;
+        @include mobile() {
+          width: 100%;
+        }
         .content-header {
           font-weight: 700;
           font-size: 64px;
@@ -96,6 +81,7 @@ $tablet-width: 1024px;
           }
         }
         .content-desc {
+          height: 160px;
           width: 524px;
           font-weight: 400;
           font-size: 16px;

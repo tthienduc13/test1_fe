@@ -63,6 +63,7 @@ $tablet-width: 1024px;
       flex-wrap: wrap;
       @include tablet() {
         padding: 0 145px;
+        justify-content: space-between;
       }
       @include mobile() {
         justify-content: center;

@@ -1,5 +1,13 @@
 import React from "react";
 import "../Manage/Manage.scss";
+import ManagementData from "../../data/ManagementData";
+import File from "../../assets/File.svg";
+import ChartBar from "../../assets/ChartBar.svg";
+import Crown from "../../assets/Crown.svg";
+import ChartPieSlice from "../../assets/ChartPieSlice.svg";
+import Star from "../../assets/Star.svg";
+import FigmaLogo from "../../assets/FigmaLogo.svg";
+
 function Manage() {
   return (
     <>
@@ -14,78 +22,13 @@ function Manage() {
             Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.
           </div>
           <div className="manage__container-content">
-            {/* 1 */}
-            <div className="content-item">
-              <img
-                className="item-img"
-                src={require("../../assets/file.jpg")}
-              ></img>
-              <p className="item-name">Döküman Analizi</p>
-              <p className="item-desc">
-                Ante vulputate ut at accumsan et. Feugiat at tempus, est
-                senectus amet, elementum.
-              </p>
-            </div>
-            {/* 2 */}
-            <div className="content-item">
-              <img
-                className="item-img"
-                src={require("../../assets/star.jpg")}
-              ></img>
-              <p className="item-name">Kabul ve Değerlendirme</p>
-              <p className="item-desc">
-                Ante vulputate ut at accumsan et. Feugiat at tempus, est
-                senectus amet, elementum.
-              </p>
-            </div>
-            {/* 3 */}
-            <div className="content-item">
-              <img
-                className="item-img"
-                src={require("../../assets/crown.jpg")}
-              ></img>
-              <p className="item-name">İş Kuralları Analizi</p>
-              <p className="item-desc">
-                AAnte vulputate ut at accumsan et. Feugiat at tempus, est
-                senectus amet, elementum.
-              </p>
-            </div>
-            {/* 4 */}
-            <div className="content-item">
-              <img
-                className="item-img"
-                src={require("../../assets/ChartBar.jpg")}
-              ></img>
-              <p className="item-name">Akış Diyagramları</p>
-              <p className="item-desc">
-                AAnte vulputate ut at accumsan et. Feugiat at tempus, est
-                senectus amet, elementum.
-              </p>
-            </div>
-            {/* 5 */}
-            <div className="content-item">
-              <img
-                className="item-img"
-                src={require("../../assets/ChartPieSlice.jpg")}
-              ></img>
-              <p className="item-name">Paydaş Analizi</p>
-              <p className="item-desc">
-                AAnte vulputate ut at accumsan et. Feugiat at tempus, est
-                senectus amet, elementum.
-              </p>
-            </div>
-            {/* 6 */}
-            <div className="content-item">
-              <img
-                className="item-img"
-                src={require("../../assets/FigmaLogo.jpg")}
-              ></img>
-              <p className="item-name">Prototipleme</p>
-              <p className="item-desc">
-                AAnte vulputate ut at accumsan et. Feugiat at tempus, est
-                senectus amet, elementum.
-              </p>
-            </div>
+            {ManagementData.map((item, index) => (
+              <div className="content-item">
+                <img className="item-img" src={File}></img>
+                <p className="item-name">{item.name}</p>
+                <p className="item-desc">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
