@@ -1,5 +1,10 @@
 import React from "react";
 import "../Footer/Footer.scss";
+import FacebookLogo from "../../assets/FacebookLogo.svg";
+import TwitterLogo from "../../assets/TwitterLogo.svg";
+import InstagramLogo from "../../assets/InstagramLogo.svg";
+import LinkedinLogo from "../../assets/LinkedinLogo.svg";
+import MediumLogo from "../../assets/MediumLogo.svg";
 function Footer() {
   return (
     <>
@@ -37,10 +42,13 @@ function Footer() {
           </div>
           <div className="footer__container-row2">
             <div className="copyright">© Copyright 2010-2021 - Can Çevik</div>
-            <img
-              className="contact"
-              src={require("../../assets/contact-icon.png")}
-            ></img>
+            <div className="contact">
+              <img className="contact-logo" src={MediumLogo}></img>
+              <img className="contact-logo" src={LinkedinLogo}></img>
+              <img className="contact-logo" src={TwitterLogo}></img>
+              <img className="contact-logo" src={InstagramLogo}></img>
+              <img className="contact-logo" src={FacebookLogo}></img>
+            </div>
           </div>
         </div>
       </div>

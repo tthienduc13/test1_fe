@@ -15,9 +15,9 @@ $tablet-width: 1024px;
 .footer {
   width: 100%;
   display: flex;
+  background-color: #f8464a;
   justify-content: center;
   &__container {
-    background-color: #f8464a;
     max-width: 1440px;
     flex: 1;
     display: flex;
@@ -76,6 +76,11 @@ $tablet-width: 1024px;
       .contact {
         width: 224px;
         height: 32px;
+        gap: 16px;
+        &-logo {
+          height: 32px;
+          width: 32px;
+        }
         @include mobile() {
           margin-bottom: 65px;
         }

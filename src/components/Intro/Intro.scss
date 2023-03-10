@@ -18,13 +18,12 @@ $tablet-width: 1024px;
   justify-content: center;
   width: 100%;
   &__container {
-    max-width: 1200px;
+    max-width: 1440px;
     gap: 120px;
-    flex: 1;
+    flex-grow: 1;
     max-width: 1440px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 160px 120px;
     @include tablet() {
@@ -35,12 +34,11 @@ $tablet-width: 1024px;
       gap: 55px;
     }
     &-content {
+      width: 100%;
       display: flex;
       justify-content: space-between;
       &:last-child {
         flex-direction: row-reverse;
-      }
-      @include tablet() {
       }
       @include mobile() {
         flex-direction: column;
@@ -54,13 +52,17 @@ $tablet-width: 1024px;
         }
       }
       &-desc {
-        width: 50%;
         display: flex;
+        width: 524px;
         flex-direction: column;
+        @include tablet {
+          width: 428px;
+        }
         @include mobile() {
           width: 100%;
         }
         .content-header {
+          display: block;
           font-weight: 700;
           font-size: 64px;
           line-height: 76px;
@@ -82,7 +84,6 @@ $tablet-width: 1024px;
         }
         .content-desc {
           height: 160px;
-          width: 524px;
           font-weight: 400;
           font-size: 16px;
           line-height: 32px;
@@ -97,6 +98,7 @@ $tablet-width: 1024px;
           }
           @include mobile() {
             width: 340px;
+            height: 200px;
             margin-bottom: 40px;
             font-weight: 400;
             font-size: 14px;

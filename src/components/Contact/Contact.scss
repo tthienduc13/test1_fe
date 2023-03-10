@@ -31,9 +31,26 @@ $tablet-width: 1024px;
       padding: 90px 20px 93px 20px;
     }
     &-logo {
-      height: 160px;
-      width: 160px;
+      height: 120px;
+      width: 120px;
       margin-bottom: 10px;
+      img {
+        height: 120px;
+        width: 120px;
+      }
+      position: relative;
+      &::before {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        height: 61px;
+        width: 61px;
+        border-radius: 50%;
+        top: 6px;
+        right: 4px;
+        background-color: #f84646;
+        z-index: -1;
+      }
       @include mobile() {
         margin-bottom: 20px;
         height: 90px;

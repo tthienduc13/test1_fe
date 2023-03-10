@@ -16,11 +16,11 @@ $tablet-width: 1024px;
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #f84646;
   &__container {
     padding: 75px 0;
     flex: 1;
     max-width: 1440px;
-    background-color: #f84646;
     @include tablet() {
       padding: 82px 0;
     }
@@ -36,7 +36,6 @@ $tablet-width: 1024px;
       font-feature-settings: "liga" off;
       color: #ffffff;
       @include mobile() {
-        // width: 335px;
         font-weight: 800;
         font-size: 36px;
         line-height: 47px;
@@ -71,7 +70,7 @@ $tablet-width: 1024px;
       @include mobile() {
         flex-direction: column;
         gap: 40px;
-        margin-top: 67px;
+        margin-top: 55px;
         padding: 0 96px;
       }
       .content-desc {

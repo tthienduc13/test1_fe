@@ -24,7 +24,10 @@ function Manage() {
           <div className="manage__container-content">
             {ManagementData.map((item, index) => (
               <div className="content-item">
-                <img className="item-img" src={File}></img>
+                <img
+                  className="item-img"
+                  src={require(`../../assets/${item.imgLink}.svg`)}
+                ></img>
                 <p className="item-name">{item.name}</p>
                 <p className="item-desc">{item.desc}</p>
               </div>

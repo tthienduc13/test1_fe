@@ -1,5 +1,6 @@
 import React from "react";
 import "../Supply/Supply.scss";
+import CaretCircleDoubleRight from "../../assets/CaretCircleDoubleRight.svg";
 function Supply() {
   return (
     <>
@@ -11,22 +12,13 @@ function Supply() {
           <div className="supply__container-desc">IoT Destekli Çözümler</div>
           <div className="supply__container-content">
             <div className="content-desc">Yazılım Kalitesini Arttırıyoruz</div>
-            <img
-              className="next-icon"
-              src={require("../../assets/next.png")}
-            ></img>
+            <img className="next-icon" src={CaretCircleDoubleRight}></img>
             <div className="content-desc">
               Olası Hataları Önceden Belirliyoruz
             </div>
-            <img
-              className="next-icon"
-              src={require("../../assets/next.png")}
-            ></img>
+            <img className="next-icon" src={CaretCircleDoubleRight}></img>
             <div className="content-desc">Oluşabilecek Riskleri Önlüyoruz</div>
-            <img
-              className="next-icon"
-              src={require("../../assets/next.png")}
-            ></img>
+            <img className="next-icon" src={CaretCircleDoubleRight}></img>
             <div className="content-desc">
               Zaman ve Maliyetten Tasarruf Sağlıyoruz
             </div>

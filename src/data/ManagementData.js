@@ -1,6 +1,6 @@
 const ManagementData = [
   {
-    imgLink: ".File",
+    imgLink: "File",
     name: "Döküman Analizi",
     desc: "Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.",
   },
