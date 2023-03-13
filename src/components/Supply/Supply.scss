@@ -21,6 +21,9 @@ $tablet-width: 1024px;
     padding: 75px 0;
     flex: 1;
     max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @include tablet() {
       padding: 82px 0;
     }
@@ -58,11 +61,13 @@ $tablet-width: 1024px;
       }
     }
     &-content {
+      max-width: 1200px;
+      padding: 0 63px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 45px;
       margin-top: 60px;
-      padding: 0 183px;
       @include tablet() {
         margin-top: 55px;
         padding: 0 60px;
@@ -79,19 +84,6 @@ $tablet-width: 1024px;
         font-size: 18px;
         line-height: 31px;
         color: white;
-        &:first-child {
-          max-width: 146px;
-        }
-        &:nth-child(3) {
-          max-width: 199px;
-        }
-        &:nth-child(5) {
-          max-width: 181px;
-        }
-        &:last-child {
-          max-width: 182px;
-        }
-
         @include tablet() {
           font-size: 14px;
           line-height: 22px;
