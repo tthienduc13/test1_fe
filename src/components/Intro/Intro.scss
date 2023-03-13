@@ -60,6 +60,7 @@ $tablet-width: 1024px;
         }
         @include mobile() {
           width: 100%;
+          align-items: center;
         }
         .content-header {
           display: block;
