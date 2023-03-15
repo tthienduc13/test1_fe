@@ -49,9 +49,11 @@ $tablet-width: 1024px;
         gap: 30px;
         &:first-child {
           flex-direction: column-reverse;
+          align-items: center;
         }
         &:nth-child(2) {
           flex-direction: column-reverse;
+          align-items: center;
           gap: 30px;
         }
       }
