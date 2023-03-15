@@ -39,6 +39,7 @@ $tablet-width: 1024px;
       @include mobile() {
         flex-direction: column;
         gap: 49px;
+        margin-bottom: 30px;
       }
       .row1__item {
         display: flex;

@@ -13,7 +13,7 @@ function Footer() {
           <div className="footer__container-row1">
             <div className="row1__item">
               <div className="row1__item-header">Çözüm ve Hizmetler</div>
-              <p className="row1__item-desc">Çözüm ve Hizmetler</p>
+              <p className="row1__item-desc">Yazılım Geliştirme</p>
               <p className="row1__item-desc">Outsourcing</p>
               <p className="row1__item-desc">Kalite ve Süreç Yönetimi</p>
               <p className="row1__item-desc">Danışmanlık</p>
