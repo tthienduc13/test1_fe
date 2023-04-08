@@ -1,11 +1,12 @@
 import React from "react";
 import "../Supply/Supply.scss";
-import CaretCircleDoubleRight from "../../assets/CaretCircleDoubleRight.svg";
+import CaretCircleDoubleRight from "../../assets/icons/CaretCircleDoubleRight.svg";
+import "../../style/scss/global/_global.scss";
 function Supply() {
   return (
     <>
       <div className="supply">
-        <div className="supply__container">
+        <div className="supply__container container">
           <div className="supply__container-header">
             Test Yönetimiyle Neler Sağlıyoruz?
           </div>

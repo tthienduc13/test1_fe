@@ -1,10 +1,11 @@
 import React from "react";
 import "../Header/Header.scss";
+import "../../style/scss/global/_global.scss";
 function Header() {
   return (
     <>
       <div className="header">
-        <div className="header__container">
+        <div className="header__container container">
           <div className="burger">
             <i class="fa-solid fa-bars"></i>
           </div>

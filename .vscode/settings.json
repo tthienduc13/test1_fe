@@ -1,0 +1,4 @@
+{
+  "genieai.enableConversationHistory": false,
+  "genieai.openai.model": "gpt-4"
+}

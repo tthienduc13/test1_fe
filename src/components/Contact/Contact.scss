@@ -1,18 +1,4 @@
-$mobile-width: 768px;
-$tablet-width: 1024px;
-
-@mixin tablet {
-  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media (max-width: #{$mobile-width}) {
-    @content;
-  }
-}
-
+@import "../../style/scss/global/global";
 .contact {
   display: flex;
   width: 100%;
@@ -21,8 +7,6 @@ $tablet-width: 1024px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1440px;
-    flex: 1;
     padding: 160px 398px 160px 397px;
     @include tablet() {
       padding: 160px 189px;
@@ -52,7 +36,7 @@ $tablet-width: 1024px;
         border-radius: 50%;
         top: 6px;
         right: 4px;
-        background-color: #f84646;
+        background-color: $base-color;
         z-index: -1;
       }
       @include mobile() {
@@ -95,7 +79,7 @@ $tablet-width: 1024px;
       color: white;
       font-size: 24px;
       line-height: 20px;
-      background: #f84646;
+      background: $base-color;
       border-radius: 8px;
       gap: 10px;
       border: none;

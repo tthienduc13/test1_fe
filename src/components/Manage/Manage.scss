@@ -1,23 +1,9 @@
-$mobile-width: 768px;
-$tablet-width: 1024px;
-
-@mixin tablet {
-  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media (max-width: #{$mobile-width}) {
-    @content;
-  }
-}
+@import "../../style/scss/global/global";
 .manage {
   width: 100%;
   display: flex;
   justify-content: center;
   &__container {
-    max-width: 1440px;
     padding: 120px 120px 140px 120px;
     display: flex;
     flex-direction: column;

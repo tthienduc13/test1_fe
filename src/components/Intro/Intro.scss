@@ -1,26 +1,11 @@
-$mobile-width: 768px;
-$tablet-width: 1024px;
-
-@mixin tablet {
-  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media (max-width: #{$mobile-width}) {
-    @content;
-  }
-}
+@import "../../style/scss/global/global";
 
 .intro {
   display: flex;
   justify-content: center;
   width: 100%;
   &__container {
-    max-width: 1440px;
     gap: 120px;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +58,7 @@ $tablet-width: 1024px;
           font-weight: 700;
           font-size: 64px;
           line-height: 76px;
-          color: #2e2e2e;
+          color: $header-color;
           margin-bottom: 40px;
           @include tablet() {
             margin-bottom: 20px;
@@ -94,7 +79,7 @@ $tablet-width: 1024px;
           font-weight: 400;
           font-size: 16px;
           line-height: 32px;
-          color: #808080;
+          color: $text-color;
           margin-bottom: 80px;
           @include tablet() {
             width: 428px;
@@ -117,7 +102,7 @@ $tablet-width: 1024px;
           width: 160px;
           color: white;
           display: inline-block;
-          background: #f84646;
+          background: $base-color;
           border-radius: 8px;
           font-weight: 600;
           font-size: 14px;

@@ -1,25 +1,10 @@
-$mobile-width: 768px;
-$tablet-width: 1024px;
-
-@mixin tablet {
-  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media (max-width: #{$mobile-width}) {
-    @content;
-  }
-}
+@import "../../style/scss/global/global";
 .document {
   width: 100%;
   display: flex;
   background-color: #f4f5f7;
   justify-content: center;
   &__container {
-    max-width: 1440px;
-    flex: 1;
     padding-top: 60px;
     @include tablet() {
       padding-top: 45px;

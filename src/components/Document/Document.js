@@ -1,20 +1,20 @@
 import React from "react";
 import "../Document/Document.scss";
-import borusan from "../../assets/borusan.svg";
-import university from "../../assets/university.svg";
-import BookMyShowLogo from "../../assets/BookMyShowLogo.svg";
-import akbank from "../../assets/akbank.svg";
-import tumugor from "../../assets/tumugor.svg";
-import akcan from "../../assets/akcan.svg";
-import aktas from "../../assets/aktas.svg";
-import ola from "../../assets/ola.svg";
-import amazon from "../../assets/amazon.svg";
-
+import borusan from "../../assets/brandLogos/borusanBrand.svg";
+import university from "../../assets/brandLogos/uniBrand.svg";
+import BookMyShowLogo from "../../assets/brandLogos/bookBrand.svg";
+import akbank from "../../assets/brandLogos/akbankBrand.svg";
+import tumugor from "../../assets/brandLogos/tumugorBrand.svg";
+import akcan from "../../assets/brandLogos/akcanBrand.svg";
+import aktas from "../../assets/brandLogos/aktasBrand.svg";
+import ola from "../../assets/brandLogos/olaBrand.svg";
+import amazon from "../../assets/brandLogos/amazonBrand.svg";
+import "../../style/scss/global/_global.scss";
 function Document() {
   return (
     <>
       <div className="document">
-        <div className="document__container">
+        <div className="document__container container">
           <div className="document__container-header">Referanslarımız</div>
           <div className="document__container-desc">
             Bize güvenen ve beraber çalıştığımız iş ortaklarımız

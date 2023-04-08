@@ -1,10 +1,11 @@
 import React from "react";
 import "../Intro/Intro.scss";
+import "../../style/scss/global/_global.scss";
 function Intro() {
   return (
     <>
       <div className="intro">
-        <div className="intro__container">
+        <div className="intro__container container">
           {/* row1 */}
           <div className="intro__container-content">
             <div className="intro__container-content-desc">
@@ -20,7 +21,7 @@ function Intro() {
               <button className="content-btn">Keşfet</button>
             </div>
             <div className="intro__container-content-img">
-              <img src={require("../../assets/intro1.png")}></img>
+              <img src={require("../../assets/img/intro1.png")}></img>
             </div>
           </div>
           {/* row2 */}
@@ -38,7 +39,7 @@ function Intro() {
               <button className="content-btn">Keşfet</button>
             </div>
             <div className="intro__container-content-img">
-              <img src={require("../../assets/intro2.png")}></img>
+              <img src={require("../../assets/img/intro2.png")}></img>
             </div>
           </div>
         </div>
