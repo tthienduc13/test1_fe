@@ -1,6 +1,12 @@
 import React from "react";
 import "../Header/Header.scss";
-import "../../style/scss/global/_global.scss";
+import "../../assets/style/scss/global/_global.scss";
+const navbarItem = [
+  { name: "Çözüm ve Hizmetler" },
+  { name: "Ürünler" },
+  { name: "İnsan Kaynakları" },
+  { name: "Kurumsal" },
+];
 function Header() {
   return (
     <>
@@ -11,10 +17,9 @@ function Header() {
           </div>
           <div className="header__container-navbar">
             <ul>
-              <li>Çözüm ve Hizmetler</li>
-              <li>Ürünler</li>
-              <li>İnsan Kaynakları</li>
-              <li>Kurumsal</li>
+              {navbarItem.map((item, index) => (
+                <li>{item.name}</li>
+              ))}
             </ul>
             <button>İletişim</button>
           </div>

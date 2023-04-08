@@ -1,10 +1,8 @@
 const { alias } = require("react-app-rewire-alias");
-
+const path = require("path");
 module.exports = function override(config) {
   alias({
-    "@": "src",
-    "@icons": "src/assets/icons",
-    "@img": "src/img",
+    "@icons": path.resolve(__dirname, "src/assets/icons"),
   })(config);
 
   return config;

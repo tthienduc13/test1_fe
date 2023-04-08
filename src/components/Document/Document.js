@@ -9,7 +9,29 @@ import akcan from "../../assets/brandLogos/akcanBrand.svg";
 import aktas from "../../assets/brandLogos/aktasBrand.svg";
 import ola from "../../assets/brandLogos/olaBrand.svg";
 import amazon from "../../assets/brandLogos/amazonBrand.svg";
-import "../../style/scss/global/_global.scss";
+import "../../assets/style/scss/global/_global.scss";
+const socialMediaLogos = [
+  {
+    col: 1,
+    img: ["borusanBrand"],
+  },
+  {
+    col: 2,
+    img: ["uniBrand", "bookBrand"],
+  },
+  {
+    col: 3,
+    img: ["akbankBrand", "akcanBrand", "tumugorBrand"],
+  },
+  {
+    col: 4,
+    img: ["aktasBrand", "olaBrand"],
+  },
+  {
+    col: 5,
+    img: ["amazonBrand"],
+  },
+];
 function Document() {
   return (
     <>
@@ -21,48 +43,17 @@ function Document() {
           </div>
           <div className="document__container-logos">
             <div className="show-logos">
-              {/* col1 */}
-              <div className="col">
-                <div className="logo">
-                  <img src={borusan}></img>
+              {socialMediaLogos.map((logo, index) => (
+                <div className="col">
+                  {logo.img.map((img, index) => (
+                    <div className="logo">
+                      <img
+                        src={require(`../../assets/brandLogos/${img}.svg`)}
+                      ></img>
+                    </div>
+                  ))}
                 </div>
-              </div>
-              {/* col2 */}
-              <div className="col">
-                <div className="logo">
-                  <img src={university}></img>
-                </div>
-                <div className="logo">
-                  <img src={BookMyShowLogo}></img>
-                </div>
-              </div>
-              {/* col3 */}
-              <div className="col">
-                <div className="logo">
-                  <img src={akbank}></img>
-                </div>
-                <div className="logo">
-                  <img src={akcan}></img>
-                </div>
-                <div className="logo">
-                  <img src={tumugor}></img>
-                </div>
-              </div>
-              {/* col4 */}
-              <div className="col">
-                <div className="logo">
-                  <img src={aktas}></img>
-                </div>
-                <div className="logo">
-                  <img src={ola}></img>
-                </div>
-              </div>
-              {/* col5 */}
-              <div className="col">
-                <div className="logo">
-                  <img src={amazon}></img>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

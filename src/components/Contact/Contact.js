@@ -1,7 +1,7 @@
 import React from "react";
 import "../Contact/Contact.scss";
 import Users from "../../assets/icons/Users.svg";
-import "../../style/scss/global/_global.scss";
+import "../../assets/style/scss/global/_global.scss";
 
 function Contact() {
   return (

@@ -7,7 +7,7 @@ import Crown from "../../assets/icons/Crown.svg";
 import ChartPieSlice from "../../assets/icons/ChartPieSlice.svg";
 import Star from "../../assets/icons/Star.svg";
 import FigmaLogo from "../../assets/icons/FigmaLogo.svg";
-import "../../style/scss/global/_global.scss";
+import "../../assets/style/scss/global/_global.scss";
 function Manage() {
   return (
     <>

@@ -1,6 +1,6 @@
 import React from "react";
 import "../Intro/Intro.scss";
-import "../../style/scss/global/_global.scss";
+import "../../assets/style/scss/global/_global.scss";
 function Intro() {
   return (
     <>

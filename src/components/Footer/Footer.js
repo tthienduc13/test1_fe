@@ -5,7 +5,7 @@ import TwitterLogo from "../../assets/icons/TwitterLogo.svg";
 import InstagramLogo from "../../assets/icons/InstagramLogo.svg";
 import LinkedinLogo from "../../assets/icons/LinkedinLogo.svg";
 import MediumLogo from "../../assets/icons/MediumLogo.svg";
-import "../../style/scss/global/_global.scss";
+import "../../assets/style/scss/global/_global.scss";
 const items = [
   {
     header: "Çözüm ve Hizmetler",
@@ -36,6 +36,13 @@ const items = [
   },
 ];
 
+const socialMediaLogos = [
+  { imgLink: "MediumLogo" },
+  { imgLink: "LinkedinLogo" },
+  { imgLink: "TwitterLogo" },
+  { imgLink: "InstagramLogo" },
+  { imgLink: "FacebookLogo" },
+];
 function Footer() {
   return (
     <>
@@ -56,11 +63,12 @@ function Footer() {
           <div className="footer__container-row2">
             <div className="copyright">© Copyright 2010-2021 - Can Çevik</div>
             <div className="contact">
-              <img className="contact-logo" src={MediumLogo}></img>
-              <img className="contact-logo" src={LinkedinLogo}></img>
-              <img className="contact-logo" src={TwitterLogo}></img>
-              <img className="contact-logo" src={InstagramLogo}></img>
-              <img className="contact-logo" src={FacebookLogo}></img>
+              {socialMediaLogos.map((item, indes) => (
+                <img
+                  className="contact-logo"
+                  src={require(`../../assets/icons/${item.imgLink}.svg`)}
+                ></img>
+              ))}
             </div>
           </div>
         </div>
