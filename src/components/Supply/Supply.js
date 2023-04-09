@@ -1,7 +1,7 @@
 import React from "react";
 import "../Supply/Supply.scss";
-import CaretCircleDoubleRight from "../../assets/icons/CaretCircleDoubleRight.svg";
-import "../../assets/style/scss/global/_global.scss";
+import CaretCircleDoubleRight from "@icons/CaretCircleDoubleRight.svg";
+import "@style/_global.scss";
 function Supply() {
   return (
     <>

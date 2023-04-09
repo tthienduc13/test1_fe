@@ -1,13 +1,13 @@
 import React from "react";
 import "../Manage/Manage.scss";
 import ManagementData from "../../data/ManagementData";
-import File from "../../assets/icons/File.svg";
-import ChartBar from "../../assets/icons/ChartBar.svg";
-import Crown from "../../assets/icons/Crown.svg";
-import ChartPieSlice from "../../assets/icons/ChartPieSlice.svg";
-import Star from "../../assets/icons/Star.svg";
-import FigmaLogo from "../../assets/icons/FigmaLogo.svg";
-import "../../assets/style/scss/global/_global.scss";
+import File from "@icons/File.svg";
+import ChartBar from "@icons/ChartBar.svg";
+import Crown from "@icons/Crown.svg";
+import ChartPieSlice from "@icons/ChartPieSlice.svg";
+import Star from "@icons/Star.svg";
+import FigmaLogo from "@icons/FigmaLogo.svg";
+import "@style/_global.scss";
 function Manage() {
   return (
     <>
@@ -26,7 +26,7 @@ function Manage() {
               <div className="content-item">
                 <img
                   className="item-img"
-                  src={require(`../../assets/icons/${item.imgLink}.svg`)}
+                  src={require(`@icons/${item.imgLink}.svg`)}
                 ></img>
                 <p className="item-name">{item.name}</p>
                 <p className="item-desc">{item.desc}</p>

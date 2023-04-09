@@ -1,11 +1,11 @@
 import React from "react";
 import "../Footer/Footer.scss";
-import FacebookLogo from "../../assets/icons/FacebookLogo.svg";
-import TwitterLogo from "../../assets/icons/TwitterLogo.svg";
-import InstagramLogo from "../../assets/icons/InstagramLogo.svg";
-import LinkedinLogo from "../../assets/icons/LinkedinLogo.svg";
-import MediumLogo from "../../assets/icons/MediumLogo.svg";
-import "../../assets/style/scss/global/_global.scss";
+import FacebookLogo from "@icons/FacebookLogo.svg";
+import TwitterLogo from "@icons/TwitterLogo.svg";
+import InstagramLogo from "@icons/InstagramLogo.svg";
+import LinkedinLogo from "@icons/LinkedinLogo.svg";
+import MediumLogo from "@icons/MediumLogo.svg";
+import "@style/_global.scss";
 const items = [
   {
     header: "Çözüm ve Hizmetler",

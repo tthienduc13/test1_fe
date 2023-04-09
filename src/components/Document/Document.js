@@ -1,15 +1,15 @@
 import React from "react";
 import "../Document/Document.scss";
-import borusan from "../../assets/brandLogos/borusanBrand.svg";
-import university from "../../assets/brandLogos/uniBrand.svg";
-import BookMyShowLogo from "../../assets/brandLogos/bookBrand.svg";
-import akbank from "../../assets/brandLogos/akbankBrand.svg";
-import tumugor from "../../assets/brandLogos/tumugorBrand.svg";
-import akcan from "../../assets/brandLogos/akcanBrand.svg";
-import aktas from "../../assets/brandLogos/aktasBrand.svg";
-import ola from "../../assets/brandLogos/olaBrand.svg";
-import amazon from "../../assets/brandLogos/amazonBrand.svg";
-import "../../assets/style/scss/global/_global.scss";
+import borusan from "@brandLogos/borusanBrand.svg";
+import university from "@brandLogos/uniBrand.svg";
+import BookMyShowLogo from "@brandLogos/bookBrand.svg";
+import akbank from "@brandLogos/akbankBrand.svg";
+import tumugor from "@brandLogos/tumugorBrand.svg";
+import akcan from "@brandLogos/akcanBrand.svg";
+import aktas from "@brandLogos/aktasBrand.svg";
+import ola from "@brandLogos/olaBrand.svg";
+import amazon from "@brandLogos/amazonBrand.svg";
+import "@style/_global.scss";
 const socialMediaLogos = [
   {
     col: 1,
@@ -47,9 +47,7 @@ function Document() {
                 <div className="col">
                   {logo.img.map((img, index) => (
                     <div className="logo">
-                      <img
-                        src={require(`../../assets/brandLogos/${img}.svg`)}
-                      ></img>
+                      <img src={require(`@brandLogos/${img}.svg`)}></img>
                     </div>
                   ))}
                 </div>

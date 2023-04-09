@@ -1,6 +1,6 @@
 import React from "react";
 import "../Header/Header.scss";
-import "../../assets/style/scss/global/_global.scss";
+import "@style/_global.scss";
 const navbarItem = [
   { name: "Çözüm ve Hizmetler" },
   { name: "Ürünler" },

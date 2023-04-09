@@ -1,10 +1,10 @@
-import Header from "./components/Header/Header";
-import Manage from "./components/Manage/Manage";
-import Supply from "./components/Supply/Supply";
-import Document from "./components/Document/Document";
-import Contact from "./components/Contact/Contact";
-import Intro from "./components/Intro/Intro";
-import Footer from "./components/Footer/Footer";
+import Header from "@component/Header/Header";
+import Manage from "@component/Manage/Manage";
+import Supply from "@component/Supply/Supply";
+import Document from "@component/Document/Document";
+import Contact from "@component/Contact/Contact";
+import Intro from "@component/Intro/Intro";
+import Footer from "@component/Footer/Footer";
 function App() {
   return (
     <>

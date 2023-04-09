@@ -1,6 +1,6 @@
 import React from "react";
 import "../Intro/Intro.scss";
-import "../../assets/style/scss/global/_global.scss";
+import "@style/_global.scss";
 function Intro() {
   return (
     <>
@@ -21,7 +21,7 @@ function Intro() {
               <button className="content-btn">Keşfet</button>
             </div>
             <div className="intro__container-content-img">
-              <img src={require("../../assets/img/intro1.png")}></img>
+              <img src={require("@img/intro1.png")}></img>
             </div>
           </div>
           {/* row2 */}
@@ -39,7 +39,7 @@ function Intro() {
               <button className="content-btn">Keşfet</button>
             </div>
             <div className="intro__container-content-img">
-              <img src={require("../../assets/img/intro2.png")}></img>
+              <img src={require("@img/intro2.png")}></img>
             </div>
           </div>
         </div>
